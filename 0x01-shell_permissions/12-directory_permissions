@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chmod -R ugo+X *
+mkdir -m 751 dir_holberton
