@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script also displays "Holberton School" 10 times
+
+index=0
+while ((index < 10));
+do
+  echo "Holberton School"
+  ((index++))
+done
