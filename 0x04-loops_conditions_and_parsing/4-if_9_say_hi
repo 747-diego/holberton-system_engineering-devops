@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script also displays "Holberton School" 10 times
+# but for the 9th iteration, display Holberton School
+# then Hi on a new line.
+index=0
+while (( index < 10 ));
+do
+  echo "Holberton School"
+    if (( index == 8 ));
+    then
+        echo "Hi"
+    fi
+  ((index++))
+done
