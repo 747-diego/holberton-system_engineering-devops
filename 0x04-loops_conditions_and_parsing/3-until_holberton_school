@@ -4,6 +4,6 @@
 index=0
 until [ $index -eq 10 ];
 do
-	echo "Holberton School"
-	((index++))
+  echo "Holberton School"
+  ((index++))
 done
