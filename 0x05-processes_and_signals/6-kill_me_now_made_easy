@@ -2,4 +2,4 @@
 # Write a Bash script that kills 4-to_infinity_and_beyond process.
 # Cannot use kill or killall
 TheLoop=$(./4-to_infinity_and_beyond)
-pkill -f $TheLoop
+pkill -f "$TheLoop"
