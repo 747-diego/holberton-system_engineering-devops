@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Displays the content of the /etc/passwd file
+UserInfo=/etc/passwd
+while IFS= read -r content; do echo "$content" | cut -d: -f1,4,6; done < $UserInfo
