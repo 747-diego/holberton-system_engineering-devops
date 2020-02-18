@@ -2,4 +2,4 @@
 # Write a Bash script that kills 7-highlander process.
 # Cannot use kill or killall
 TheLoop=$(./7-highlander)
-pkill -f9 "$TheLoop"
+kill -f9 "$TheLoop"
