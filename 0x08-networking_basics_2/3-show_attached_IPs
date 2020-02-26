@@ -2,5 +2,4 @@
 # Write a Bash script that displays
 # all active IPv4 IPs on the machine it’s executed on.
 
-ifconfig | grep "inet addr:" | awk {'print $2'}
-# cut -d ":" -f2 | cut -d " " -f1
+ifconfig | grep "inet addr:" | cut -d ":" -f2 | cut -d " " -f1
