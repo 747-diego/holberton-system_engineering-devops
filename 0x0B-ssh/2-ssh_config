@@ -1,0 +1,6 @@
+Host Diegos-MBP
+	HostName 10.0.2.15
+	User ubuntu
+	Port 22
+	PasswordAuthentication no
+	IdentityFile ~/.ssh/holberton
