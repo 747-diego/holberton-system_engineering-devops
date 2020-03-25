@@ -1,5 +1,5 @@
 Host Diegos-MBP
-	HostName 10.0.2.15
+	HostName 35.227.119.182
 	User ubuntu
 	Port 22
 	PasswordAuthentication no
