@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# installing and updating engine X
+sudo apt-get -y update && sudo apt-get -y install nginx
+# Staring engine X
+service nginx start
+sudo echo "Holberton School" > /usr/share/nginx/html/index.html
