@@ -5,5 +5,7 @@ sudo echo 'Holberton School' > /var/www/html/index.html
 # Redirection to Nyan Cat
 sudo sed -i '37i\$redirect' /etc/nginx/sites-available/default
 redirect="server_name nomadengineers.tech;rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
+sudo sed -i '37i\$redirect' /etc/nginx/sites-available/default
+redirect="server_name nomadengineers.tech;rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanen$
+sudo echo "Ceci n'est pas une page\n" > /var/www/html/notfound404.html
 sudo service nginx start
-sudo echo "Ceci n'est pas une page\n" > /var/www/html/404.html
