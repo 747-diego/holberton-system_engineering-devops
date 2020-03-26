@@ -6,3 +6,4 @@ sudo echo 'Holberton School' > /var/www/html/index.html
 sudo sed -i '37i\$redirect' /etc/nginx/sites-available/default
 redirect="server_name nomadengineers.tech;rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
 sudo service nginx start
+sudo echo "Ceci n'est pas une page\n" > /var/www/html/404.html
