@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Nginx likes port 80
-
+# write a Bash script with the minimum 
+# number of commands to automate your fix.
 sudo sed -i 's/8080/80/' /etc/nginx/sites-enabled/default
