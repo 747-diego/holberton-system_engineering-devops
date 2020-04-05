@@ -3,9 +3,6 @@
 sudo apt-get -y update && sudo apt-get -y install nginx
 sudo echo 'Holberton School' > /var/www/html/index.html
 # Redirection to Nyan Cat
-sudo sed -i '37i\$redirect' /etc/nginx/sites-available/default
-redirect="server_name nomadengineers.tech;rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
-sudo sed -i '37i\$redirect' /etc/nginx/sites-available/default
-redirect="server_name nomadengineers.tech;rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanen$
+sudo sed -i "s|server_name\ _;|server_name _;\n\trewrite ^/redirect_me/ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;|" /etc/nginx/sites-available/default
 sudo echo "Ceci n'est pas une page\n" > /var/www/html/notfound404.html
 sudo service nginx start
