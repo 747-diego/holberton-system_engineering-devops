@@ -4,7 +4,7 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    """"First Argument.""""
+    """"First Argument.u""""
     Ag = argv[1]
 
     """"Getting the USER ID."""
