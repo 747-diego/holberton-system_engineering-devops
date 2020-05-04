@@ -4,6 +4,9 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
+    import requests
+    from sys import argv
+
     """"First Argument.u""""
     Ag = argv[1]
 
