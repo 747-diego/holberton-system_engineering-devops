@@ -26,8 +26,8 @@ if __name__ == '__main__':
         Data["task"] = task.get("title")
         Data["completed"] = task.get("completed")
         Data["username"] = Uname
-        DataList.append(Data)
-        Data = {}
+        Data.append(DataList)
+        DataList = {}
 
     ExportJson = {}
     ExportJson[Ag] = DataList
