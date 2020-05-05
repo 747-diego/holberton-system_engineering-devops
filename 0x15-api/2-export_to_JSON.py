@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""export data in the JSON format."""
+"""Export data in the JSON format."""
 
 if __name__ == '__main__':
     import json
@@ -26,8 +26,8 @@ if __name__ == '__main__':
         Data["task"] = task.get("title")
         Data["completed"] = task.get("completed")
         Data["username"] = Uname
-        Data.append(DataList)
-        DataList = {}
+        DataList.append(Data)
+        Data = {}
 
     ExportJson = {}
     ExportJson[Ag] = DataList
