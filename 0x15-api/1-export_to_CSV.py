@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     """Getting the Users."""
     ApiUrl = "https://jsonplaceholder.typicode.com/users/" + Ag
-    resp = requests.get(url)
+    Response = requests.get(url)
     Name = Response.json()
 
     """Setting the Username to a variable."""
