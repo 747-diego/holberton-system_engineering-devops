@@ -3,7 +3,7 @@
 import requests import get
 
 
-def recurse(subreddit, hot_list=[], after=None):
+def recurse(subreddit, hot_list=[], AfterData=None):
     """Reddit API uses pagination for separating pages of responses."""
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     user_agent = {'User-Agent': 'Agent-Subscribe'}
