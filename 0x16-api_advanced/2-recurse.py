@@ -8,7 +8,7 @@ def recurse(subreddit, hot_list=[], after=None):
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     Agents = {'User-Agent': 'Agent-Subscribe'}
     Response = get(url, headers=Agents,
-                   allow_redirects=False, params={"after": after})
+                   allow_redirects=False, params={'after': after})
     if Response.status_code != 200:
         return None
 
