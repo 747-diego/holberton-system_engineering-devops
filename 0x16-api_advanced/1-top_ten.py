@@ -5,7 +5,7 @@ from requests import get
 
 def top_ten(subreddit):
     """If not a valid subreddit, print None."""
-    url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
+    url = 'https://www.reddit.com/r/{}/hot.json?limit=10'.format(subreddit)
     Agents = {'User-agent': 'Agent-Subscribe'}
     Response = get(url, headers=Agents, allow_redirects=False)
     if (Response.status_code != 200):
